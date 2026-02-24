@@ -17,4 +17,11 @@ Este projeto foi desenvolvido para estudo acompanhando o canal [Manual do Dev](h
 - PokéAPI: https://pokeapi.co/
 - Manual do Dev: https://www.youtube.com/@ManualDoDev
 
+- <img width="811" height="677" alt="image" src="https://github.com/user-attachments/assets/2b984a30-2035-414a-8d4e-dd0459ea0466" />
+
+https://pokedex-zeta-nine-57.vercel.app/
+
+
+  
+
 
