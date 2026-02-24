@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg" />
+    <script defer src="script.js"></script>
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <video autoplay loop muted playsinline class="bg-video">
+      <source src="img/fundopokemon.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo em background.
+    </video>
+    <main>
+      <img
+        src="#"
+        alt="Imagem do Pokémon"
+        class="pokemon-image"
+        style="display: none"
+      />
+
+      <h1 class="pokemon-data" aria-live="polite">
+        <span class="pokemon-number"></span>
+        <span class="pokemon-name"></span>
+      </h1>
+
+      <form class="form" autocomplete="off">
+        <label for="input-search" class="visually-hidden">Buscar Pokémon</label>
+        <input
+          id="input-search"
+          type="search"
+          class="input-search"
+          placeholder="Nome ou Número"
+          required
+          aria-label="Buscar por nome ou número do Pokémon"
+        />
+      </form>
+      <div class="buttons">
+        <button type="button" class="button btn-prev" aria-label="Anterior">
+         ← Prev 
+        </button>
+        <button type="button" class="button btn-next" aria-label="Próximo">
+          Next →
+        </button>
+      </div>
+
+      <img src="img/pokedex.png" alt="Pokedex" class="pokedex" />
+    </main>
+    <style>
+      .bg-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    </style>
+  </body>
+</html>
